@@ -39,7 +39,7 @@ Example Playbook
            java_packages_redhat:
              - java-1.8.0-openjdk
            java_packages_debian:
-             - openjdk-8-jdk
+             - oracle-java8-installer
 
 License
 -------
