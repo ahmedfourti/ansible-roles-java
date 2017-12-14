@@ -1,0 +1,6 @@
+---
+# tasks file for java
+- name : Installing Java
+  apt: name={{ item }} state=present
+  with_items: "{{ java_packages_debian }}"
+  when: java_packages_debian is defined

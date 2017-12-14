@@ -1,0 +1,6 @@
+---
+# tasks file for java
+- name : Installing Java
+  yum: name={{ item }} state=present
+  with_items: "{{ java_packages_redhat }}"
+  when: java_packages_redhat is defined
